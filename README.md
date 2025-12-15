@@ -1,1 +1,1 @@
-# Finetune LLAVA on Autonomous Driving (CVPR 2024 Challenge)
+# Finetune LLAVA on Autonomous Driving (ECCV 2024 Challenge)
