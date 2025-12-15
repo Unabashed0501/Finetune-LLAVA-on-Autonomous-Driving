@@ -5,14 +5,33 @@
 </p>
 
 <p align="center">
+  <b>NTU DLCV Fall 2024 Final Project | ECCV 2024 Autonomous Driving Challenge</b>
+</p>
+
+<p align="center">
   <a href="#overview">Overview</a> •
   <a href="#results">Results</a> •
   <a href="#architecture">Architecture</a> •
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#training">Training</a> •
-  <a href="#inference">Inference</a>
+  <a href="#inference">Inference</a> •
+  <a href="#poster">Poster</a>
 </p>
+
+---
+
+## 📊 Poster
+
+For a visual summary of our approach and results, see our project poster:
+
+<p align="center">
+  <a href="Poster.pdf">
+    <img src="https://img.shields.io/badge/View-Project%20Poster-blue?style=for-the-badge&logo=adobe-acrobat-reader" alt="View Poster"/>
+  </a>
+</p>
+
+> 📄 **[Download Poster (PDF)](Poster.pdf)** - Comprehensive visual overview of PREVISION architecture, methodology, and experimental results.
 
 ---
 
@@ -375,6 +394,7 @@ Finetune-LLAVA-on-Autonomous-Driving/
 ├── train.sh
 ├── pretrain.sh
 ├── inference.sh
+├── Poster.pdf                          # Project poster (visual summary)
 └── README.md
 ```
 
@@ -426,6 +446,18 @@ Finetune-LLAVA-on-Autonomous-Driving/
 - Check bounding box coordinates are in correct format (x_min, y_min, x_max, y_max)
 - Verify image preprocessing matches CLIP's expected format
 
+## Poster
+
+Our project poster provides a comprehensive visual overview of PREVISION, including:
+
+- **Problem Statement**: Corner case analysis in autonomous driving
+- **Architecture Diagram**: Complete multimodal fusion pipeline
+- **Training Strategy**: Two-stage training with LoRA
+- **Experimental Results**: Ablation studies and performance comparisons
+- **Key Insights**: What worked and what didn't
+
+📄 **[View/Download Poster (PDF)](Poster.pdf)**
+
 ## Citation
 
 If you use this code, please cite:
@@ -433,11 +465,20 @@ If you use this code, please cite:
 ```bibtex
 @misc{prevision2024,
   title={PREVISION: Fine-tuning LLaVA for Autonomous Driving Corner Case Analysis},
-  author={Your Name},
+  author={Hsu, Ching-Yu and Liu, Ting-Chun and Li, Kuan-Yi and Fu, Chi-An},
   year={2024},
-  howpublished={\url{https://github.com/yourusername/Finetune-LLAVA-on-Autonomous-Driving}}
+  howpublished={\url{https://github.com/Unabashed0501/Finetune-LLAVA-on-Autonomous-Driving/}}
 }
 ```
+
+## Team
+
+| Name | Contribution |
+|------|--------------|
+| Ching-Yu Hsu | Architecture design, BBox encoder implementation |
+| Ting-Chun Liu | Training pipeline, LoRA integration |
+| Kuan-Yi Li | Data preprocessing, depth estimation |
+| Chi-An Fu | Inference pipeline, parallel processing |
 
 ## Acknowledgements
 
